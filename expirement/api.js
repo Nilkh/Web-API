@@ -1,9 +1,11 @@
 //your code
-const URL =
-	'https://www.boredapi.com/api/activity?minprice=0&maxprice=0.1&participants%3E1'
+const URL = 'https://random-data-api.com/api/v2/banks'
 
-fetch(URL).then(res => {
+fetch(URL).then(res => 
+(res.json())
+
+).then((res) => 
     console.log(res)
-
-})
+).catch((res) =>
+console.log(res) )
 // console.log(fetch(URL))
